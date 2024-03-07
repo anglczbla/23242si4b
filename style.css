@@ -1,79 +1,106 @@
 /* element selector */
-* { 
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: pink;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
+    color: white;
 }
 
 /* media query */
 /* tablet: layout yg ditampilkan 2 kolom */
 @media screen and (min-width: 600px) {
-    body{
+    body {
         background-color: crimson;
     }
+
     .col-sm-6 {
         width: 50%;
         float: left;
     }
-    .col-sm-12{
+
+    .col-sm-12 {
         width: 100%;
         float: left;
     }
-    
+
 
 
 }
+
 /* desktop: layout yang ditampilkan 4kolom */
 @media screen and (min-width: 992px) {
-    body{
-        background-color:darkgrey;
+    body {
+        background-color: darkgrey;
     }
+
     .col-lg-3 {
-    width: 25%;
-    float: left;
-}
-    .col-lg-6{
-    width: 50%;
-    float: left;
-}
-    .col-sg-4{
-    width: 33,3%
-    float: left;
+        width: 25%;
+        float: left;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-lg-4 {
+        width: 33.3%;
+         float: left;
+    }
+
+
 }
 
-    
-}
-    
 
 /* class selector */
-.text-primary{
+.text-primary {
     color: plum;
 }
 
-.col-50{
+.col-50 {
     width: 50%;
     float: left;
 }
 
-.img-responsive{
+.img-responsive {
     width: 100%;
     max-height: 500px;
 }
 
-.circle{
+.img-responsive1 {
+    width: 95%;
+    max-height: 400px;
+}
+
+.img-responsive2 {
+    width:90%;
+    max-height: 300px;
+}
+
+.circle {
     border-radius: 50%;
 }
-.rounded{
+
+.circle1 {
+    border-radius: 20%;
+}
+
+.circle2 {
+    border-radius: 20%;
+}
+
+.rounded {
     border-radius: 50%;
 }
-.p-1{
+
+.p-1 {
     padding: 10px;
 }
 
-.row::after{
+.row::after {
     content: "";
     clear: both;
     display: table;
